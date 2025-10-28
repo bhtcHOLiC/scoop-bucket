@@ -1,0 +1,1 @@
+$env:PUBLIC\Documents\Tencent\QQ\UserDataInfo.ini

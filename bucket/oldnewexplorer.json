@@ -1,0 +1,12 @@
+{
+    "version": "1.1.9",
+    "description": "A shell extension and tweaker that can undo \"improvements\" to file browsing added in Windows 10, 8.1, and 8.",
+    "homepage": "https://www.majorgeeks.com/files/details/oldnewexplorer.html",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "file:///D:/etc/scoop/buckets/xiangshize-main/local/oldnewexplorer/1.1.9-win64.7z",
+            "hash": "984d89449ecd89dbd008fd622aaedcb96ef861b809a2b26835c7babe908518c9"
+        }
+    }
+}

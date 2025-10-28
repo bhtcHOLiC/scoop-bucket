@@ -1,0 +1,26 @@
+{
+    "version": "17.14.16",
+    "description": "Microsoft Visual Studio Community 2022. ",
+    "homepage": "https://www.visualstudio.com/downloads/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://visualstudio.microsoft.com/license-terms"
+    },
+    "url": "https://aka.ms/vs/17/release/vs_Enterprise.exe",
+    "hash": "1e1c1f9e6fdbe74cc820921746d43dfea36db299b8f07dda148076d5b6fe973a",
+    "installer": {
+        "script": [
+            "Invoke-ExternalCommand -FilePath \"$dir\\vs_Enterprise.exe\" -Args @('--quiet', '--wait') -RunAs | Out-Null",
+            "Invoke-ExternalCommand -FilePath \"$dir\\vs_Enterprise.exe\" -Args @('--quiet', '--wait', '--channelUri \"https://aka.ms/vs/17/release/channel\"') -RunAs | Out-Null",
+            "Invoke-ExternalCommand -FilePath \"$dir\\vs_Enterprise.exe\" -Args @('--update', '--quiet') -RunAs | Out-Null",
+            "Invoke-ExternalCommand -FilePath \"$dir\\vs_Enterprise.exe\" -Args @('update', '--wait', '--quiet', '--norestart', '--installPath \"vs2022\\Community\"') -RunAs | Out-Null"
+        ]
+    },
+    "checkver": {
+        "url": "https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes",
+        "regex": ">Version ([\\d.]+)<"
+    },
+    "autoupdate": {
+        "url": "https://aka.ms/vs/17/release/vs_Enterprise.exe"
+    }
+}

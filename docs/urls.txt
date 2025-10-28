@@ -1,0 +1,11 @@
+https://github.com/cmontage/scoopbucket-third
+
+irm get.scoop.sh -outfile 'install.ps1'
+install.ps1 -RunAsAdmin -ScoopDir 'D:' -ScoopGlobalDir 'D:' -NoProxy
+
+
+说明
+https://sspai.com/post/65933
+
+社区
+https://rasa.github.io/scoop-directory

@@ -1,0 +1,12 @@
+{
+    "version": "10.11.1",
+    "description": "UFS Explorer is aimed at providing both technical specialists and home users with powerful and at the same time easy-to-use software tools for data access and do-it-yourself recovery of lost or deleted files.",
+    "homepage": "https://www.ufsexplorer.com/",
+    "license": "Portable",
+    "architecture": {
+        "64bit": {
+            "url": "file:///D:/etc/scoop/buckets/xiangshize-main/local/ufsexplorer/10.11.1-win64.7z",
+            "hash": "ad140a5c318e0a9a56f4ca99bf95ab959be1d1e501f78edd9f79b7f5871ba378"
+        }
+    }
+}
